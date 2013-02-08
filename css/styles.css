@@ -1,0 +1,49 @@
+body {
+	background-image: url("../img/kindajean_@2X.png");
+	margin: 0;
+	padding: 0;
+}
+/* Nav Styles */
+header {
+	width: 1024px;
+	background-image: url("../img/escheresque_ste.png");
+	margin: 0 auto;
+	padding: 0;
+}
+#logo {
+	font-family: 'Nova Square', cursive;
+	color: white;
+	margin: 0;
+	padding: 19px 10px;
+	display: block;
+	float: left;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li {
+	float: right;
+}
+ul li a {
+	width: 45px;
+	display: block;
+	padding: 30px 20px;
+	background: none;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	text-align: center;
+}
+ul li a:hover {
+	background: grey;
+}
+.clearfix:after {
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: none;
+	overflow: hidden;
+	clear: both;
+}

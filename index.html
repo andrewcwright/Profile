@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Andrew Wright Profile</title>
+	<meta name="description" content="This is a contact page for Andrew Wright">
+	<meta name="author" content="Andrew Wright">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+		$('.dropdown').hide();
+		
+		$('#nav li').hover(
+
+		function() {
+			$(this).find('.dropdown').fadeIn('slow');
+		},
+
+		function() {
+			$(this).find('.dropdown').fadeOut('slow');
+		}); //end of hover
+		
+		$('#changebg1').click(function() {
+			$('body').addClass("bggreen");
+		});
+		$('#changebg2').click(function() {
+			$('body').removeClass("bggreen");
+		});
+
+	}); //end doc ready
+	</script>
+</head>
+<body>
+ <header class="clearfix">
+  <div class="clearfix">
+   <h1 id="logo">Andrew Wright Web Design</h1>
+	<ul id="nav" class="clearfix">
+		<li><a href>About</a></li>
+		<li><a href>How</a></li>
+		<li><a href="#">Where</a></li>
+		<li><a href="#">Why</a></li>
+		<li><a href="#">When</a></li>
+	</ul>
+  </div>
+ </header
+</body>
+</html>
