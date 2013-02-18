@@ -1,50 +1,68 @@
 <!doctype html>
 <html>
 <head>
-	<title>Andrew Wright Profile</title>
-	<meta name="description" content="This is a contact page for Andrew Wright">
-	<meta name="author" content="Andrew Wright">
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript">
+<title>Andrew Wright Profile</title>
+<meta name="description" content="This is a contact page for Andrew Wright">
+<meta name="author" content="Andrew Wright">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="js/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<!-- 960 grid -->
+<!-- <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/text.css"> -->
+<link rel="stylesheet" href="css/960.css">
 
-	$(document).ready(function() {
-		$('.dropdown').hide();
-		
-		$('#nav li').hover(
-
-		function() {
-			$(this).find('.dropdown').fadeIn('slow');
-		},
-
-		function() {
-			$(this).find('.dropdown').fadeOut('slow');
-		}); //end of hover
-		
-		$('#changebg1').click(function() {
-			$('body').addClass("bggreen");
-		});
-		$('#changebg2').click(function() {
-			$('body').removeClass("bggreen");
-		});
-
-	}); //end doc ready
-	</script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+    	prevText: "",
+    	nextText: ""
+    }); //end nivo
+}); //end load
+</script>
 </head>
-<body>
- <header class="clearfix">
+<body class="container_16">
+ <header class="grid_16 clearfix">
   <div class="clearfix">
    <h1 id="logo">Andrew Wright Web Design</h1>
 	<ul id="nav" class="clearfix">
-		<li><a href>About</a></li>
-		<li><a href>How</a></li>
-		<li><a href="#">Where</a></li>
-		<li><a href="#">Why</a></li>
-		<li><a href="#">When</a></li>
+		<li><a href="#"><img src="img/facebook.png"></a></li>
+		<li><a href="#"><img src="img/github.png"></a></li>
+		<li><a href="#"><img src="img/linkedin.png"></a></li>
+		<li><a href="#"><img src="img/twitter.png"></a></li>
 	</ul>
   </div>
- </header
+ </header>
+ 
+ <!-- Nivo Slider -->
+ <div class="slider-wrapper grid_16">
+    <div id="slider" class="nivoSlider">
+        <img src="img/nemo.jpg" alt="" />
+        <a href="http://dev7studios.com"><img src="img/toystory.jpg" alt="" title="#htmlcaption" /></a>
+        <img src="img/up.jpg" alt="" title="This is an example of a caption" />
+        <img src="img/walle.jpg" alt="" />
+    </div>
+</div>
+<!-- <div id="htmlcaption" class="nivo-html-caption">
+    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+</div> -->
+<!-- End Slider -->
+
+<!-- Main Body -->
+<div id="left" class="grid_8">
+<!-- 	<img src="img/arnold.jpeg" width="160"> -->
+</div>
+<div id="right" class="grid_8">
+<!-- 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam vestibulum aliquam. Ut id ligula eget quam vehicula rutrum. Nam ac lectus eget turpis auctor vestibulum. Cras a lectus nibh, blandit tincidunt eros. Pellentesque id ligula purus, id mattis mi. Praesent lobortis vulputate mattis. Suspendisse ornare urna eu tellus auctor laoreet. Aenean ut magna urna. Aliquam ornare mauris pellentesque orci sollicitudin sed malesuada magna rutrum. Ut ornare nulla quis velit varius sit amet euismod turpis sollicitudin. Sed blandit enim eu nisl cursus cursus. In et nibh lacus. Fusce a orci placerat neque lacinia condimentum. Morbi ac sodales nunc. Maecenas massa augue, vehicula ut ultricies a, scelerisque vitae felis. Sed blandit purus vel est ultricies porta.
+	</p>
+	<p>Maecenas accumsan congue commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra pretium purus, eu ultricies purus mattis at. Vivamus rhoncus eros eget libero molestie porta. Aliquam erat volutpat. Vestibulum laoreet, urna ac egestas venenatis, ante justo auctor purus, vel aliquet mauris tellus sed tortor. Vivamus vulputate gravida ligula vitae auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vel magna et erat tincidunt dictum. Etiam quis varius orci.
+	</p>
+</div> -->
+<!-- End Main Body -->
 </body>
 </html>
